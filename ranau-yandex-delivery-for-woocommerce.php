@@ -3,7 +3,7 @@
  * Plugin Name: Ranau Yandex Delivery for WooCommerce
  * Plugin URI: https://ranau.uk/wordpress/ranau-yandex-delivery-for-woocommerce/
  * Description: ПВЗ и курьерская доставка Яндекса с живым расчетом тарифов в WooCommerce.
- * Version: 0.2.1
+ * Version: 0.2.2
  * Requires at least: 6.9
  * Requires PHP: 7.4
  * Author: Ranau
@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 defined('ABSPATH') || exit;
 
-define('RANAU_YANDEX_DELIVERY_VERSION', '0.2.1');
+define('RANAU_YANDEX_DELIVERY_VERSION', '0.2.2');
 define('RANAU_YANDEX_DELIVERY_FILE', __FILE__);
 define('RANAU_YANDEX_DELIVERY_DIR', plugin_dir_path(__FILE__));
 define('RANAU_YANDEX_DELIVERY_URL', plugin_dir_url(__FILE__));

@@ -1,10 +1,10 @@
 === Ranau Yandex Delivery for WooCommerce ===
-Contributors: yudin-s
+Contributors: yudins
 Tags: woocommerce, yandex delivery, pickup, courier, shipping
 Requires at least: 6.9
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.2.1
+Stable tag: 0.2.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -64,6 +64,10 @@ Community issues: https://github.com/yudin-s/ranau-yandex-delivery-for-woocommer
 Optional paid support and custom WooCommerce development are available at https://ranau.uk/ and are not required to use the plugin.
 
 == Changelog ==
+
+= 0.2.2 =
+
+* Corrected the WordPress.org contributor account.
 
 = 0.2.1 =
 
