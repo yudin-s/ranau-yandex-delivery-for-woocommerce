@@ -1,0 +1,462 @@
+.ranau-yandex-delivery-for-woocommerce-selector {
+    background: #fff;
+    border: 1px solid #dedede;
+    border-radius: 6px;
+    display: none;
+    gap: 12px;
+    margin-top: 10px;
+    padding: 14px;
+}
+
+.ranau-yandex-delivery-for-woocommerce-selector.is-active,
+.ranau-yandex-delivery-for-woocommerce-blocks-selector {
+    display: grid;
+}
+
+.ranau-yandex-delivery-for-woocommerce-blocks-selector {
+    margin: -4px 0 14px 42px;
+    max-width: calc(100% - 42px);
+}
+
+.ranau-yandex-delivery-for-woocommerce-selector__head {
+    align-items: center;
+    display: grid;
+    gap: 18px;
+    grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.ranau-yandex-delivery-for-woocommerce-selector__head strong,
+.ranau-yandex-delivery-for-woocommerce-selector__head span {
+    display: block;
+    font-size: 12px;
+    line-height: 1.35;
+    text-transform: uppercase;
+}
+
+.ranau-yandex-delivery-for-woocommerce-selector__head strong {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.ranau-yandex-delivery-for-woocommerce-selector__head span {
+    color: #777;
+}
+
+.ranau-yandex-delivery-for-woocommerce-open {
+    background: #1d2327;
+    border: 1px solid #1d2327;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    min-height: 42px;
+    min-width: 150px;
+    padding: 0 16px;
+    text-transform: uppercase;
+}
+
+.ranau-yandex-delivery-for-woocommerce-selected {
+    background: #f8f8f8;
+    border: 1px solid #e8e8e8;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.45;
+    min-height: 44px;
+    padding: 12px 14px;
+}
+
+.ranau-yandex-delivery-for-woocommerce-selected.is-ready {
+    background: #f4fbf6;
+    border-color: #b9dcc1;
+    color: #173d21;
+}
+
+.ranau-yandex-delivery-for-woocommerce-selected.is-error {
+    background: #fff8ed;
+    border-color: #ecd6ad;
+    color: #694a18;
+}
+
+.ranau-yandex-delivery-for-woocommerce-clear {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid currentColor;
+    color: #777;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 0 0 2px;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.wc-block-components-radio-control__secondary-label[data-ranau-yandex-delivery-for-woocommerce-rate-label] {
+    color: transparent;
+    position: relative;
+}
+
+.wc-block-components-radio-control__secondary-label[data-ranau-yandex-delivery-for-woocommerce-rate-label]::after {
+    color: #111;
+    content: attr(data-ranau-yandex-delivery-for-woocommerce-rate-label);
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.35;
+    white-space: nowrap;
+}
+
+.wc-block-components-radio-control__secondary-label[data-ranau-yandex-delivery-for-woocommerce-rate-ready="0"]::after {
+    color: #686868;
+    font-weight: 400;
+}
+
+body.ranau-yandex-delivery-for-woocommerce-modal-open {
+    overflow: hidden;
+}
+
+.ranau-yandex-delivery-for-woocommerce-modal {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.58);
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    left: 0;
+    padding: 22px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100000;
+}
+
+.ranau-yandex-delivery-for-woocommerce-modal.is-open {
+    display: flex;
+}
+
+.ranau-yandex-delivery-for-woocommerce-dialog {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-rows: auto minmax(420px, 72vh) auto;
+    max-height: 94vh;
+    max-width: 1180px;
+    overflow: hidden;
+    width: min(1180px, 100%);
+}
+
+.ranau-yandex-delivery-for-woocommerce-toolbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 16px;
+}
+
+.ranau-yandex-delivery-for-woocommerce-close {
+    background: transparent;
+    border: 0;
+    color: #111;
+    cursor: pointer;
+    font-size: 28px;
+    height: 38px;
+    line-height: 1;
+    padding: 0;
+    width: 38px;
+}
+
+.ranau-yandex-delivery-for-woocommerce-widget-shell {
+    min-height: 420px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.ranau-yandex-delivery-for-woocommerce-widget {
+    min-height: 420px;
+    width: 100%;
+}
+
+.ranau-yandex-delivery-for-woocommerce-loading {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.94);
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    padding: 28px;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    transition: opacity 160ms ease;
+    visibility: hidden;
+    z-index: 100000;
+}
+
+.ranau-yandex-delivery-for-woocommerce-loading.is-active {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.ranau-yandex-delivery-for-woocommerce-spinner {
+    animation: ranau-yandex-delivery-for-woocommerce-spin 750ms linear infinite;
+    border: 3px solid #e6e6e6;
+    border-radius: 50%;
+    border-top-color: #111;
+    height: 38px;
+    margin-bottom: 6px;
+    width: 38px;
+}
+
+.ranau-yandex-delivery-for-woocommerce-loading__title {
+    color: #111;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.ranau-yandex-delivery-for-woocommerce-loading__hint {
+    color: #686868;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+@keyframes ranau-yandex-delivery-for-woocommerce-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ranau-yandex-delivery-for-woocommerce-spinner {
+        animation-duration: 1500ms;
+    }
+}
+
+.ranau-yandex-delivery-for-woocommerce-modal-status {
+    color: #5c5c5c;
+    font-size: 13px;
+    min-height: 42px;
+    padding: 11px 16px;
+}
+
+@media (max-width: 680px) {
+    .ranau-yandex-delivery-for-woocommerce-selector__head {
+        grid-template-columns: 1fr;
+    }
+
+    .ranau-yandex-delivery-for-woocommerce-open {
+        width: 100%;
+    }
+
+    .ranau-yandex-delivery-for-woocommerce-modal {
+        padding: 0;
+    }
+
+    .ranau-yandex-delivery-for-woocommerce-dialog {
+        border-radius: 0;
+        grid-template-rows: auto minmax(0, 1fr) auto;
+        height: 100%;
+        height: 100dvh;
+        max-height: 100%;
+        max-height: 100dvh;
+    }
+
+    .ranau-yandex-delivery-for-woocommerce-widget-shell,
+    .ranau-yandex-delivery-for-woocommerce-widget {
+        min-height: 0;
+    }
+
+    .ranau-yandex-delivery-for-woocommerce-toolbar {
+        padding-top: max(13px, env(safe-area-inset-top));
+    }
+
+    .ranau-yandex-delivery-for-woocommerce-modal-status {
+        padding-bottom: max(11px, env(safe-area-inset-bottom));
+    }
+}
+
+.ranau-yandex-courier-selector {
+    background: #fff;
+    border: 1px solid #dedede;
+    border-radius: 6px;
+    display: none;
+    gap: 14px;
+    margin-top: 10px;
+    padding: 14px;
+}
+
+.ranau-yandex-courier-selector.is-active,
+.ranau-yandex-courier-blocks-selector {
+    display: grid;
+}
+
+.ranau-yandex-courier-blocks-selector {
+    margin: -4px 0 14px 42px;
+    max-width: calc(100% - 42px);
+}
+
+.ranau-yandex-courier-selector__head strong,
+.ranau-yandex-courier-selector__head span,
+.ranau-yandex-courier-editor label > span {
+    display: block;
+    font-size: 12px;
+    line-height: 1.35;
+    text-transform: uppercase;
+}
+
+.ranau-yandex-courier-selector__head strong {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.ranau-yandex-courier-selector__head span {
+    color: #777;
+}
+
+.ranau-yandex-courier-editor {
+    display: grid;
+    gap: 10px;
+}
+
+.ranau-yandex-courier-editor label {
+    display: grid;
+    gap: 6px;
+}
+
+.ranau-yandex-courier-address {
+    background: #fff;
+    border: 1px solid #cfcfcf;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #111;
+    font: inherit;
+    min-height: 46px;
+    padding: 10px 12px;
+    width: 100%;
+}
+
+.ranau-yandex-courier-address:focus {
+    border-color: #111;
+    outline: 1px solid #111;
+    outline-offset: 1px;
+}
+
+.ranau-yandex-courier-calculate {
+    background: #1d2327;
+    border: 1px solid #1d2327;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    min-height: 42px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.ranau-yandex-courier-calculate:disabled {
+    cursor: wait;
+    opacity: 0.62;
+}
+
+.ranau-yandex-courier-status {
+    background: #f8f8f8;
+    border: 1px solid #e8e8e8;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.45;
+    min-height: 44px;
+    padding: 12px 14px;
+}
+
+.ranau-yandex-courier-status.is-ready {
+    background: #f4fbf6;
+    border-color: #b9dcc1;
+    color: #173d21;
+}
+
+.ranau-yandex-courier-status.is-error {
+    background: #fff8ed;
+    border-color: #ecd6ad;
+    color: #694a18;
+}
+
+.ranau-yandex-courier-offers {
+    display: grid;
+    gap: 8px;
+}
+
+.ranau-yandex-courier-offer {
+    align-items: center;
+    background: #fff;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    color: #111;
+    cursor: pointer;
+    display: grid;
+    gap: 4px 12px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    padding: 11px 13px;
+    text-align: left;
+    width: 100%;
+}
+
+.ranau-yandex-courier-offer:hover,
+.ranau-yandex-courier-offer[aria-pressed="true"] {
+    border-color: #111;
+}
+
+.ranau-yandex-courier-offer[aria-pressed="true"] {
+    background: #f4fbf6;
+    box-shadow: inset 3px 0 0 #111;
+}
+
+.ranau-yandex-courier-offer__title,
+.ranau-yandex-courier-offer__price {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.ranau-yandex-courier-offer__price {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.ranau-yandex-courier-offer__time {
+    color: #666;
+    font-size: 12px;
+    grid-column: 1 / -1;
+}
+
+.wc-block-components-radio-control__secondary-label[data-ranau-yandex-courier-rate-label] {
+    color: transparent;
+    position: relative;
+}
+
+.wc-block-components-radio-control__secondary-label[data-ranau-yandex-courier-rate-label]::after {
+    color: #111;
+    content: attr(data-ranau-yandex-courier-rate-label);
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.35;
+    white-space: nowrap;
+}
+
+.wc-block-components-radio-control__secondary-label[data-ranau-yandex-courier-rate-ready="0"]::after {
+    color: #686868;
+    font-weight: 400;
+}
+
+@media (max-width: 680px) {
+    .ranau-yandex-courier-calculate {
+        width: 100%;
+    }
+
+    .ranau-yandex-courier-blocks-selector {
+        margin-left: 0;
+        max-width: none;
+    }
+}
